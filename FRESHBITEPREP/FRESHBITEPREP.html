@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZitowBites</title>
+<link rel="stylesheet" href="FRESHBITEPREP.css">
+</head>
+
+<body>
+
+<header>
+
+<a class="brand" href="FRESHBITEPREP.html">
+<img src="ZitowBitesTransparent.png" class="logo">
+ZitowBites
+</a>
+
+<nav>
+<a href="MEALS.html">Meals</a>
+<a href="BILLINGS.html">Billing</a>
+<a href="PLANS.html">Plans</a>
+<a href="NUTRIENTS.html">Nutrients</a>
+</nav>
+
+<button onclick="openLogin()">Login</button>
+
+</header>
+
+
+<section class="gallery">
+<h2>Food Gallery</h2>
+
+<div class="foods">
+
+<div class="card">
+<img src="bbq.webp">
+<p>BBQ</p>
+</div>
+
+<div class="card">
+<img src="chicken.jpg">
+<p>Fried Chicken</p>
+</div>
+
+<div class="card">
+<img src="LECHONKAWALI.jpg">
+<p>Lechon Kawali</p>
+</div>
+
+<div class="card">
+<img src="LECHONMANOK.webp">
+<p>Lechon Manok</p>
+</div>
+
+<div class="card">
+<img src="CHICKENNUGGETS.webp">
+<p>Chicken Nuggets</p>
+</div>
+
+<div class="card">
+<img src="FISH FILLET.jpg">
+<p>Fish Fillet</p>
+</div>
+
+</div>
+</section>
+
+
+<div id="loginDrawer" class="drawer">
+
+<span class="close" onclick="closeLogin()">✖</span>
+
+<h2>Login</h2>
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<button class="loginBtn" onclick="login()">Login</button>
+
+</div>
+
+
+<script>
+
+function openLogin(){
+document.getElementById("loginDrawer").style.right = "0";
+}
+
+function closeLogin(){
+document.getElementById("loginDrawer").style.right = "-350px";
+}
+
+function login(){
+alert("Successfully Logged In!");
+}
+
+</script>
+
+</body>
+</html>
